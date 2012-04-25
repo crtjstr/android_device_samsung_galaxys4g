@@ -302,4 +302,9 @@ PRODUCT_COPY_FILES += \\
 
 EOF
 
+adb pull /system/lib/libaudio.so proprietary/libaudio.so
+adb pull /system/lib/libaudio.so out/target/product/galaxys4g/obj/lib/libaudio.so
+adb pull /system/lib/libaudio.so out/target/product/galaxys4g/system/lib/libaudio.so
+adb pull /system/lib/libaudiopolicy.so out/target/product/galaxys4g/obj/lib/libaudiopolicy.so
+
 ./setup-makefiles.sh
