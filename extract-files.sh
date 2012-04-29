@@ -302,12 +302,12 @@ PRODUCT_COPY_FILES += \\
 
 EOF
 
-adb pull /system/lib/libaudio.so ../../../../vendor/samsung/galaxys4g/proprietary/lib/libaudio.so
-adb pull /system/lib/libaudio.so out/target/product/galaxys4g/obj/lib/libaudio.so
-mkdir out/target/product/galaxys4g/system/lib/
-adb pull /system/lib/libaudio.so out/target/product/galaxys4g/system/lib/libaudio.so
+adb pull /system/lib/libaudio.so ../../../vendor/samsung/galaxys4g/proprietary/lib/libaudio.so
+adb pull /system/lib/libaudio.so ../../../out/target/product/galaxys4g/obj/lib/libaudio.so
+mkdir ../../../out/target/product/galaxys4g/system/lib/
+adb pull /system/lib/libaudio.so ../../../out/target/product/galaxys4g/system/lib/libaudio.so
 
-adb pull /system/lib/libaudiopolicy.so proprietary/libaudiopolicy.so
-adb pull /system/lib/libaudiopolicy.so out/target/product/galaxys4g/obj/lib/libaudiopolicy.so
+adb pull /system/lib/libaudiopolicy.so ../../../proprietary/libaudiopolicy.so
+adb pull /system/lib/libaudiopolicy.so ../../../out/target/product/galaxys4g/obj/lib/libaudiopolicy.so
 
 ./setup-makefiles.sh
