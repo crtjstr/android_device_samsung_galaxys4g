@@ -302,7 +302,7 @@ PRODUCT_COPY_FILES += \\
 
 EOF
 
-adb pull /system/lib/libaudio.so proprietary/libaudio.so
+adb pull /system/lib/libaudio.so vendor/samsung/galaxys4g/proprietary/lib/libaudio.so
 adb pull /system/lib/libaudio.so out/target/product/galaxys4g/obj/lib/libaudio.so
 mkdir out/target/product/galaxys4g/system/lib/
 adb pull /system/lib/libaudio.so out/target/product/galaxys4g/system/lib/libaudio.so
