@@ -307,7 +307,7 @@ adb pull /system/lib/libaudio.so ../../../out/target/product/galaxys4g/obj/lib/l
 mkdir ../../../out/target/product/galaxys4g/system/lib/
 adb pull /system/lib/libaudio.so ../../../out/target/product/galaxys4g/system/lib/libaudio.so
 
-adb pull /system/lib/libaudiopolicy.so ../../../proprietary/libaudiopolicy.so
+adb pull /system/lib/libaudiopolicy.so ../../../proprietary/lib/libaudiopolicy.so
 adb pull /system/lib/libaudiopolicy.so ../../../out/target/product/galaxys4g/obj/lib/libaudiopolicy.so
 
 ./setup-makefiles.sh
